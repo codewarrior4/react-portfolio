@@ -1,0 +1,170 @@
+/* HEADER */
+
+Header {
+    padding: 50px 0px;
+    background-color: #27af88;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  Header h1 {
+    background-color: #67d49a;
+    font-size: 50px;
+    padding: 10px 80px 10px 100px;
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+  }
+  
+  /* NAV BAR */
+  
+  nav {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 4px solid #67d49a;
+    border-radius: 0px 0px 3px 3px;
+    margin: 10px;
+    color: #0077b6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    box-shadow: inset 0 0 0 0 #67d49a;
+    text-align: center;
+  }
+  
+  .Link {
+    color: white
+  }
+  
+  .LinkActive {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #67d49a,
+      0 0 82px #67d49a,
+      0 0 92px #67d49a,
+      0 0 102px #67d49a,
+      0 0 151px #67d49a;
+    color: white;
+  }
+  
+  /* FOOTER */
+  
+  Footer {
+    padding-top: 20px;
+    background-color: whitesmoke;
+    width: 100vw;
+  }
+  
+  address {
+    display: inline block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100vw;
+    padding-bottom: 40px;
+  }
+  
+  address a {
+    margin: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #27af88;
+    color: #27af88;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+/* HOVERS  */
+
+nav li:hover {
+    box-shadow: inset 100px 0 0 0 #67d49a;
+    border-radius: 5px;
+  }
+  
+  address a:hover {
+    box-shadow: 7px 7px #27af88;
+    border-radius: 7px;
+  }
+
+
+/* MEDIA SCREENS */
+@media screen and (max-width: 938px) {
+  Header {
+      padding: 0;
+  }
+
+  Header h1 {
+      width: 100vw;
+      height: 10vh;
+      padding: 20px 0px 70px 0px;
+      text-align: center;
+      background-color: #295982;
+  }
+
+  Header ul {
+    margin-left: 0px;
+  }
+
+  nav {
+      width: 100vw;
+      margin-right: 0px;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+  Header h1 {
+    font-size: 50px
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  Footer h2 {
+      border-right: none;
+      border-bottom: 5px solid slategray;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      text-align: center;
+  }
+
+  address {
+    padding-right: 0px;
+    min-width: 80vw;
+}
+
+  address a {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  Header h1 {
+      height: 5vh;
+  }
+
+  nav {
+    padding-bottom: 20px;
+  }
+
+  nav li {
+    display: block;
+    padding: 0px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+.Header h1 {
+  font-size: 34px;
+  padding-bottom: 50px;
+}
+}

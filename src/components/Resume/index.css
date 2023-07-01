@@ -1,0 +1,88 @@
+/* RESUME */
+
+.format {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.resumeContainer {
+  margin-top: 40px;
+  background-color: whitesmoke;
+  border: 2px solid #27af88;
+  border-radius: 15px;
+  width: 45%;
+
+}
+
+.Resume h3 {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #27af88;
+}
+
+.Education, .Skills, .Certs {
+  color: #27af88;
+  padding: 20px;
+  line-height: 20px;
+  display: flex;
+}
+
+.Education, .Certs {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Skills li, .Education p, .Certs p {
+  color: #27af88;
+}
+
+.Skills {
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.ResumeBtn {
+  background-color: #27af88;
+  color: white;
+  padding: 10px;
+  border: 3px solid #67d49a;
+  border-radius: 10px;
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.ResumeBtn:hover {
+  background-color: #67d49a;
+  border: 3px solid #27af88;
+}
+
+li {
+  list-style-type: none;
+}
+
+.item {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .format {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  .resumeContainer {
+    width: 100%;
+  }
+
+  .firstitem {
+    margin-bottom: 40px;
+  }
+
+}
